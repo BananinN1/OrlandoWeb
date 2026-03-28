@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNMSM Elite | Librería Oficial del Postulante</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="sale-notification" class="sale-notification">
+        <img src="https://i.pravatar.cc/50" alt="User">
+        <div class="sale-content">
+            <p id="sale-text"><b>Juan de Los Olivos</b> acaba de comprar <i>"Fijas de Medicina"</i></p>
+            <span>Hace 2 minutos</span>
+        </div>
+    </div>
+
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="logo">UNMSM<span>ELITE</span></div>
+            <ul class="nav-links">
+                <li><a href="#libros" class="nav-item">Librería</a></li>
+                <li><a href="#beneficios" class="nav-item">Método</a></li>
+                <li><a href="#garantia" class="nav-item">Confianza</a></li>
+            </ul>
+            <div class="nav-actions">
+                <span class="live-indicator"><span class="dot"></span> 142 Estudiantes online</span>
+                <button class="btn nav-btn-glass" onclick="scrollToId('libros')">Comprar ahora</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-bg-animations">
+            <div class="circle-glow"></div>
+            <div class="grid-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-top-info reveal">
+                <span class="tag-new">EDICIÓN 2026 ACTUALIZADA</span>
+            </div>
+            <h1 id="hero-text" class="glitch-text">Tu ingreso a San Marcos <span>no es suerte</span></h1>
+            <p class="hero-description reveal">
+                Libros estratégicos diseñados para dominar el examen. Menos teoría de relleno, <mark>más fijas directas al grano</mark>.
+            </p>
+            <div class="hero-cta-group reveal">
+                <button class="btn btn-primary-shine" onclick="scrollToId('libros')">
+                    <i class="fas fa-shopping-bag"></i> VER CATÁLOGO COMPLETO
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section id="beneficios" class="features">
+        <div class="feature-card reveal">
+            <i class="fas fa-brain"></i>
+            <h3>Método DECO Directo</h3>
+            <p>Preguntas contextualizadas que entrenan tu mente para el día del examen.</p>
+        </div>
+        <div class="feature-card reveal">
+            <i class="fas fa-bolt"></i>
+            <h3>Resolución Veloz</h3>
+            <p>Trucos y atajos que no te enseñan en la academia tradicional.</p>
+        </div>
+        <div class="feature-card reveal">
+            <i class="fas fa-check-double"></i>
+            <h3>100% Actualizado</h3>
+            <p>Basado en los últimos 10 exámenes de admisión de la Decana.</p>
+        </div>
+    </section>
+
+    <section id="libros" class="books-section">
+        <h2 class="section-title">Elige tu arma de ingreso 📚</h2>
+        <div class="book-grid">
+            <div class="book-card reveal">
+                <div class="book-img">
+                    <img src="https://placehold.jp/24/800000/ffffff/250x350.png?text=LA+BIBLIA+DE+RM" alt="RM">
+                    <span class="tag-top">EL MÁS VENDIDO</span>
+                </div>
+                <div class="book-info">
+                    <h3>La Biblia de RM</h3>
+                    <p>El libro que todo postulante a San Marcos DEBE tener.</p>
+                    <div class="price">S/ 49.90</div>
+                    <button class="btn buy-btn">Lo quiero ahora</button>
+                </div>
+            </div>
+            <div class="book-card reveal">
+                <div class="book-img">
+                    <img src="https://placehold.jp/24/004d40/ffffff/250x350.png?text=CIENCIAS+DECO" alt="Ciencias">
+                </div>
+                <div class="book-info">
+                    <h3>Mega Pack Ciencias</h3>
+                    <p>Física, Química y Bio explicados de forma humana.</p>
+                    <div class="price">S/ 65.00</div>
+                    <button class="btn buy-btn">Lo quiero ahora</button>
+                </div>
+            </div>
+            <div class="book-card reveal">
+                <div class="book-img">
+                    <img src="https://placehold.jp/24/1a237e/ffffff/250x350.png?text=LETRAS+TOP" alt="Letras">
+                </div>
+                <div class="book-info">
+                    <h3>Letras Imparables</h3>
+                    <p>Historia y Geo sin memorizar hojas interminables.</p>
+                    <div class="price">S/ 39.00</div>
+                    <button class="btn buy-btn">Lo quiero ahora</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="garantia" class="trust-banner">
+        <div class="trust-content reveal">
+            <h2>¿Por qué confiar en nosotros?</h2>
+            <p>Hemos ayudado a miles de postulantes a dejar de ser "eternos" y convertirse en cachimbos. Nuestra calidad editorial es indiscutible.</p>
+            <div class="trust-stats">
+                <div class="t-stat"><span>10k+</span> Ventas</div>
+                <div class="t-stat"><span>24h</span> Envío Express</div>
+                <div class="t-stat"><span>5/5</span> Calificación</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="social-proof">
+        <div class="scrolling-wrapper">
+            <div class="marquee">
+                <span>POSTULANTE A SAN MARCOS 🚀</span>
+                <span>FUTURO CACHIMBO ⚖️</span>
+                <span>LA DECANA DE AMÉRICA NOS ESPERA 💻</span>
+                <span>PREPÁRATE CON LOS MEJORES 🧠</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="whatsapp-container">
+        <div class="wa-message">¡Hola! ¿Buscas algún libro en especial? 👋</div>
+        <a href="https://wa.me/51999999999" target="_blank" class="wa-btn">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
