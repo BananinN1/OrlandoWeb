@@ -96,13 +96,3 @@ setTimeout(() => {
 
 
 
-setInterval(() => {
-    const notification = document.getElementById('sale-notification');
-    const text = document.getElementById('sale-text');
-    const random = localSales[Math.floor(Math.random() * localSales.length)];
-    
-    text.innerHTML = `<b>${random.name}</b> acaba de comprar <i>"${random.book}"</i>`;
-    notification.classList.add('active');
-    
-    setTimeout(() => notification.classList.remove('active'), 5000);
-}, 20000);
