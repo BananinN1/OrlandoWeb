@@ -1,27 +1,4 @@
-// 1. Notificaciones de "Venta Reciente" (Simulación de Social Proof)
-const sales = [
-    { name: "Carlos de Comas", book: "La Biblia de RM" },
-    { name: "Lucía de S.J.L", book: "Pack Ciencias DECO" },
-    { name: "Ricardo de Surco", book: "Letras Imparables" },
-    { name: "Jimena de Breña", book: "Fijas Medicina" }
-];
-
-const notification = document.getElementById('sale-notification');
-const saleText = document.getElementById('sale-text');
-
-function showSale() {
-    const randomSale = sales[Math.floor(Math.random() * sales.length)];
-    saleText.innerHTML = `<b>${randomSale.name}</b> acaba de comprar <i>"${randomSale.book}"</i>`;
-    notification.classList.add('active');
-    
-    setTimeout(() => {
-        notification.classList.remove('active');
-    }, 5000);
-}
-
 // Iniciar notificaciones cada 15 segundos
-setInterval(showSale, 15000);
-setTimeout(showSale, 3000); // Primera carga
 
 // 2. Rotador de Hero Text (Más dinámico)
 const titles = [
@@ -117,12 +94,7 @@ setTimeout(() => {
     if(msg) msg.style.transform = "translateX(0)";
 }, 5000);
 
-// Notificaciones de venta mejoradas
-const localSales = [
-    { name: "Anderson de S.M.P", book: "La Biblia de RM" },
-    { name: "Maria de Los Olivos", book: "Letras Imparables" },
-    { name: "Kevin de Ate", book: "Pack Ciencias DECO" }
-];
+
 
 setInterval(() => {
     const notification = document.getElementById('sale-notification');
