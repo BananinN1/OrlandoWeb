@@ -68,8 +68,8 @@ window.addEventListener("scroll", () => {
 // 3. Simulación de "X personas están viendo este libro ahora"
 function updateViewers() {
     const indicator = document.querySelector(".live-indicator");
-    const baseCount = 140;
-    const variation = Math.floor(Math.random() * 20);
+    const baseCount = 4;
+    const variation = Math.floor(Math.random() * 2);
     indicator.innerHTML = `<span class="dot"></span> ${baseCount + variation} Estudiantes online`;
 }
 setInterval(updateViewers, 5000);
